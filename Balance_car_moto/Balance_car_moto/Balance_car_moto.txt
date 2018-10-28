@@ -1,0 +1,74 @@
+Configuration	Balance_car_moto
+STM32CubeMX 	4.25.0
+Date	03/25/2018
+MCU	STM32F103VCTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	Single-ended	ADC1_TempSens_Input	VP_ADC1_TempSens_Input
+ADC2	IN10	ADC2_IN10	PC0
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	OSC_OUT
+SYS	No Debug	SYS_VS_ND	VP_SYS_VS_ND
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	Input Capture direct mode	TIM1_CH3	PE13
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM2	Input Capture direct mode	TIM2_CH3	PB10
+TIM4	PWM Generation CH1	TIM4_CH1	PD12
+TIM4	PWM Generation CH2	TIM4_CH2	PD13
+TIM8	Internal Clock	TIM8_VS_ClockSourceINT	VP_TIM8_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USART3	Asynchronous	USART3_RX	PD9
+USART3	Asynchronous	USART3_TX	PD8
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+3	PE4	GPIO_Output	Motor_Turn_Left
+4	PE5	GPIO_Output	Motor_Turn_Right
+12	OSC_IN	RCC_OSC_IN	
+13	OSC_OUT	RCC_OSC_OUT	
+15	PC0	ADC2_IN10	Turn_ADC
+44	PE13	TIM1_CH3	Capture1
+47	PB10	TIM2_CH3	Capture2
+55	PD8	USART3_TX	
+56	PD9	USART3_RX	
+59	PD12	TIM4_CH1	PWM1
+60	PD13	TIM4_CH2	PWM2
+68	PA9	USART1_TX	
+69	PA10	USART1_RX	
+92	PB6	I2C1_SCL	
+93	PB7	I2C1_SDA	
+96	PB9	GPIO_Output	LED1
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Balance_car_moto
+Project Folder : D:\BalanceCar\TextCode\Balance_car_moto\Balance_car_moto
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F1 V1.6.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
